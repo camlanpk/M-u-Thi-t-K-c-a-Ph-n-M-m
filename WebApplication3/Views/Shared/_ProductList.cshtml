@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication3.Models.Product>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        @foreach (var product in Model.Take(4)) // Chỉ hiển thị tối đa 4 sản phẩm
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card text-center">
+                    <img class="card-img-top" src="~/Images/@product.ImagePro" alt="@product.NamePro">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.NamePro</h5>
+                        <p class="text-primary font-weight-bold">$@product.Price</p>
+                        <a href="@Url.Action("Details", "CustomerProducts", new { id = product.ProductID })" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p class="text-center">Không có sản phẩm nào.</p>
+}
+

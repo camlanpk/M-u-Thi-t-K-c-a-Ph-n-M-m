@@ -1,0 +1,60 @@
+﻿@using WebApplication3.Models
+@model List<CartItem>
+@{
+    ViewBag.Title = "ConfirmCart";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    Customer customer = Session["TaiKhoan"] as Customer;
+}
+
+<div style="margin: 50px auto; width: 60%;">
+    <div style="background-color: #f8f8f8; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+        <h2 style="color: #333; margin-right: 151px; margin-top: 40px; font-family: 'Georgia', serif; font-size: 36px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);">Thông tin đơn hàng</h2>
+
+        @foreach (var product in Model)
+        {
+            <div style="display: flex; align-items: center; border-bottom: 1px solid #ccc; padding: 10px 0;">
+                <div style="flex: 1;">
+                    <img src="~/Images/@product.ImagePro" style="width: 100px;" />
+                </div>
+                <div style="flex: 3;">
+                    <p><strong>MÃ SẢN PHẨM: </strong>@product.ProductID</p>
+                    <p><strong>TÊN SẢN PHẨM: </strong>@product.NamePro</p>
+                    <p><strong>SỐ LƯỢNG: </strong>@product.Number</p>
+                    <p><strong>ĐƠN GIÁ: </strong>@String.Format("{0:0,0}", product.Price)$</p>
+                    <p><strong>THÀNH TIỀN: </strong>@String.Format("{0:0,0}", product.FinalPrice())$</p>
+                </div>
+            </div>
+        }
+
+        <div style="text-align: right; margin-top: 20px;">
+            <p style="font-weight: bold; color: #ff0000;">Tổng số lượng: @ViewBag.TotalNumber</p>
+            <p style="font-weight: bold; color: #ff0000;">Tổng tiền: @ViewBag.TotalPrice$</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; background-color: #f8f8f8; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+        <h2 style="color: #333; margin-right: 151px; margin-top: 10px; font-family: 'Georgia', serif; font-size: 36px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);">Thông tin khách hàng</h2>
+
+        <div style="display: flex; justify-content: space-between; padding-bottom: 10px;">
+            <p style="font-weight: bold; color: #333;">NAME:</p>
+            <p>@customer.NameCus</p>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding-bottom: 10px;">
+            <p style="font-weight: bold; color: #333;">PHONE:</p>
+            <p>@customer.PhoneCus</p>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding-bottom: 10px;">
+            <p style="font-weight: bold; color: #333;">DATE:</p>
+            <p>@DateTime.Now.ToShortDateString()</p>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding-bottom: 10px;">
+            <p style="font-weight: bold; color: #333;">ADDRESS:</p>
+            <p>@customer.AddressCus</p>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <!-- Điều hướng đến trang checkout sau khi xác nhận đơn hàng -->
+            <a href="@Url.Action("checkOut_Success", "Cart")" class="btn btn-primary">Agree</a>
+        </div>
+
+    </div>
+</div>

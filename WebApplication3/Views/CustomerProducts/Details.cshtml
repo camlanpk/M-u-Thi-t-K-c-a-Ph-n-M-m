@@ -1,0 +1,40 @@
+﻿@model WebApplication3.Models.Product
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div style="margin: 20px auto; width: 70%;">
+    <h2 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 36px;">CHI TIẾT SẢN PHẨM</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <img style="width: 100%; margin-top: 20px; border: 1px solid #ddd; border-radius: 8px;" src="~/Images/@Model.ImagePro">
+        </div>
+
+        <div class="col-md-6 py-5">
+            <h4 style="font-family: 'Arial', sans-serif; font-size: 24px;font-weight:600;">Tên sản phẩm: @Model.NamePro</h4>
+
+            <p style="font-family: 'Arial', sans-serif;margin-top:20px; font-size: 16px; text-align: justify;">
+                <span style="font-weight: bold;">Mô tả:</span> @Model.DescriptionPro
+            </p>
+
+            <p class="price" style="font-size: 28px; font-weight: bold; margin-top:20px;">
+                Giá bán: <span style="color: #ff6600;margin-top:20px;">@Model.Price $</span>
+            </p>
+
+            <ul class="stars" style="display: flex; list-style: none; padding-left: 0;">
+                <li><i class="fa fa-star" style="color: #ffd700;"></i></li>
+                <li><i class="fa fa-star" style="color: #ffd700;"></i></li>
+                <li><i class="fa fa-star" style="color: #ffd700;"></i></li>
+                <li><i class="fa fa-star" style="color: #ffd700;"></i></li>
+                <li><i class="fa fa-star" style="color: #ffd700;"></i></li>
+            </ul>
+            <a class="btn btn-primary" href="@Url.Action("AddToCart2", "Cart", new {id = Model.ProductID })" style="margin-top: 20px; padding: 10px 30px; border-radius: 5px;">Thêm vào giỏ hàng</a>
+            <a class="btn btn-primary" href="@Url.Action("AddToCart", "Cart", new {id = Model.ProductID })" style="margin-top: 20px; padding: 10px 30px; border-radius: 5px;">Đặt mua</a>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebApplication3.Models.OrderDetail>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_MainLayOutADMIN.cshtml";
+}
+
+
+
+
+<table class="table table-striped table-bordered" style="width:75%; margin-left:300px;">
+    <thead class="thead-dark">
+        <tr>
+            <th style="font-family: Georgia;">Số lượng</th>
+            <th style="font-family: Georgia;">Đơn giá</th>
+           
+            <th style="font-family: Georgia;">Tên sản phẩm</th>
+            <th></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+                <td>@Html.DisplayFor(modelItem => item.UnitPrice)</td>
+                
+                <td>@Html.DisplayFor(modelItem => item.Product.NamePro)</td>
+                <td>
+                   
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-info btn-sm" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

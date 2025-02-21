@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebApplication3.Models.ViewModel>
+
+@{
+    ViewBag.Title = "GroupByTop5";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div style="margin-top: 120px;">
+    <h2 style="text-align: center; margin-top: 100px;">Danh sách 5 sản phẩm bán chạy nhất</h2>
+    <div class="table-responsive" style="margin-left: auto; margin-right: auto; width: 90%; margin-top: 20px;">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Mã sản phẩm</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Hình sản phẩm</th>
+                    <th scope="col">Tổng số lượng</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var i in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(model => i.IDPro)</td>
+                        <td>@Html.DisplayFor(model => i.NamePro)</td>
+                        <td>@Html.DisplayFor(model => i.pricePro)</td>
+                        <td><img src="~/Images/@Url.Content(i.ImgPro)" height="150" /></td>
+                        <td>@Html.DisplayFor(model => i.Sum_Quantity)</td>
+                        <td>
+                            <a href="../Cart/AddToCart/@i.IDPro" class="btn btn-primary">Mua</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

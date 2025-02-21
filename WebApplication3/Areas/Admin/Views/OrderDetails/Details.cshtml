@@ -1,0 +1,30 @@
+﻿@model WebApplication3.Models.OrderDetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_MainLayOutADMIN.cshtml";
+}
+
+<div style="margin-left: 300px; width:30%; background-color: floralwhite; border-radius: 10px; padding: 20px;">
+    <h4 style="font-family: 'Times New Roman', Times, serif; color: #333; text-align: center;">Chi tiết </h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt style="font-family: 'Times New Roman', Times, serif; color: #555;">Số lượng</dt>
+        <dd>@Html.DisplayFor(model => model.Quantity)</dd>
+
+        <dt style="font-family: 'Times New Roman', Times, serif; color: #555;">Đơn giá</dt>
+        <dd>@Html.DisplayFor(model => model.UnitPrice)</dd>
+
+        
+
+        <dt style="font-family: 'Times New Roman', Times, serif; color: #555;">Tên sản phẩm</dt>
+        <dd>@Html.DisplayFor(model => model.Product.NamePro)</dd>
+    </dl>
+    <p style="text-align: center; margin-top: 20px;">
+        @Html.ActionLink("Quay lại danh sách", "Index", new { @class = "btn btn-secondary" })
+    </p>
+</div>
+
+
+

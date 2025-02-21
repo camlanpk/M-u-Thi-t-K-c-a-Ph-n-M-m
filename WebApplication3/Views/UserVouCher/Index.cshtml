@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebApplication3.Models.Voucher>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div style="margin: 10px auto; width: 60%;margin-top:150px">
+    <h2 style="text-align: center">THÔNG TIN VOUCHERS</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    MÃ VOUCHER
+                </th>
+                <th>
+                    MÃ CODE
+                </th>
+                <th>
+                    % GIẢM GIÁ
+                </th>
+                <th>
+                    THÊM
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VoucherID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiscountPercent)
+                    </td>
+                    <td>
+                        @Html.ActionLink(" Xem chi tiết", "Details", new { id = item.VoucherID }, new { @class = "btn btn-primary" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

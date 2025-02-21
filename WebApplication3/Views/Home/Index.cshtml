@@ -1,0 +1,2115 @@
+﻿@model IEnumerable<WebApplication3.Models.Product>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- ***** Main Banner Area Start ***** -->
+<div class="main-banner" id="top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left-content">
+                    <div class="thumb">
+                        <div class="inner-content">
+                            <h4 style="font-family: 'Georgia', sans-serif; background: #999999; font-weight: bold;">HƯƠNG VỊ ĐỘC ĐÁO</h4>
+                            <span style="font-family: 'Times New Roman', serif; background: #999999; display: inline-block; padding: 5px;">Tròn vị, Tinh tế &amp; Sáng tạo</span>
+                            <div class="main-border-button">
+                                <a href="@Url.Action("Index", "CustomerProducts")" style="font-family: 'Arial', sans-serif; font-weight: bold;">Mua Ngay!</a>
+                            </div>
+                        </div>
+                        <img src="~/Images/pexels-photo-1640777.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="right-content" style="width: 77%;">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="right-first-image">
+                                <div class="thumb">
+                                    <div class="inner-content">
+
+                                        <span style="font-family: 'Times New Roman', serif; font-style: italic; background: #999999; font-weight: bold;">Hương Vị <b>Ngon Nhất</b> Dành Cho Bạn</span>
+                                    </div>
+                                    <img src="~/assets/images/f2.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-first-image">
+                                <div class="thumb">
+                                    <div class="inner-content">
+
+                                        <span style="font-family: 'Times New Roman', serif; background: #999999; font-style: italic;">Món Ăn <b>Ngon Nhất</b> Cho Bạn</span>
+                                    </div>
+                                    <img src="~/assets/images/f3.jpeg" />
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-first-image">
+                                <div class="thumb">
+                                    <div class="inner-content">
+
+                                        <span style="font-family: 'Times New Roman', serif; background: #999999; font-style: italic;">Chất lượng <b>5 sao</b> Giá cả hợp lý</span>
+                                    </div>
+                                    <img src="~/assets/images/f4.jpeg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-first-image">
+                                <div class="thumb">
+                                    <div class="inner-content">
+
+                                        <span style="font-family: 'Times New Roman', serif; background: #999999; font-style: italic;">Thực đơn đa dạng <b>Tiết kiệm thời gian</b></span>
+                                    </div>
+                                    <img src="~/assets/images/f5.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***** Main Banner Area End *****
+ ***** Combo Area Starts ***** -->
+<section class="section" id="men">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2 style="font-size: 32px;">Combo ngon mỗi ngày</h2>
+                    <p style="font-size: 20px; font-style: italic;">Gợi ý sự đa dạng của món ăn và giá cả ưu đãi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="men-item-carousel">
+                    <div class="owl-men-item owl-carousel">
+
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/1"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/cb6.jpg" />
+                            </div>
+                            <div class="down-content">
+                                <h4>Combo1</h4>
+                                <span>$79.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/11"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/cb3.png" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Combo2</h4>
+                                <span>$349.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/12"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/cb4.png" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Combo3</h4>
+                                <span>$79.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/14"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/cb6.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Combo4</h4>
+                                <span>$199.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- *****Combo Ends *****
+ ***** Món chính Starts ***** -->
+<section class="section" id="women">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Món chính nước</h2>
+                    <span>Những chi tiết tinh tế tạo nên sự khác biệt cho mỗi sản phẩm.</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="women-item-carousel">
+                        <div class="owl-women-item owl-carousel">
+                            @if (ViewBag.ComboProducts != null)
+                            {
+                                int count = 0;
+                                foreach (var product in ViewBag.MainDishes)
+                                {
+
+                                    if (count >= 4) { break; }
+                                    count++;
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <div class="hover-content">
+                                                <ul>
+                                                    <li><a href="../CustomerProducts/Details/7"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href=""><i class="fa fa-star"></i></a></li>
+                                                    <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <img src="~/Images/@product.ImagePro" alt="@product.NamePro">
+                                        </div>
+                                        <div class="down-content">
+                                            <h4>@product.NamePro</h4>
+                                            <span>@product.Price</span>
+                                            <ul class="stars">
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    @*<div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
+                            <ul>
+                                <li><a href="../CustomerProducts/Details/5"><i class="fa fa-eye"></i></a></li>
+                                <li><a href=""><i class="fa fa-star"></i></a></li>
+                                <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <img src="~/assets/images/Screenshot 2024-06-27 192923.png" alt="">
+                    </div>
+                    <div class="down-content">
+                        <h4>Mì Kim chi bò Mỹ</h4>
+                        <span>$62.00</span>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
+                            <ul>
+                                <li><a href="../CustomerProducts/Details/6"><i class="fa fa-eye"></i></a></li>
+                                <li><a href=""><i class="fa fa-star"></i></a></li>
+                                <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <img src="~/assets/images/Screenshot 2024-06-27 193042.png" alt="">
+                    </div>
+                    <div class="down-content">
+                        <h4>Mì trộn xốt phô mai</h4>
+                        <span>$59.00</span>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <div class="hover-content">
+                            <ul>
+                                <li><a href="../CustomerProducts/Details/4"><i class="fa fa-eye"></i></a></li>
+                                <li><a href=""><i class="fa fa-star"></i></a></li>
+                                <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <img src="~/assets/images/Screenshot 2024-06-27 192253.png" alt="">
+                    </div>
+                    <div class="down-content">
+                        <h4>Mì Kim chi đặc biệt</h4>
+                        <span>$69.00</span>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                                    *@
+                                }
+                            }
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+<section class="section" id="men">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Combo Nước</h2>
+            <p>Gợi ý sự đa dạng của món ăn và giá cả ưu đãi.</p>
+        </div>
+        @Html.Partial("_ProductList", (IEnumerable<WebApplication3.Models.Product>)ViewBag.MainDishes)
+    </div>
+</section>
+<!-- ***** Món chính  Area Ends *****
+ ***** Drink Area Starts ***** -->
+<section class="section" id="kids">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Đồ uống-Ăn vặt</h2>
+                    <span>Những món ăn và thức uống độc đáo tạo nên trải nghiệm ẩm thực thú vị.</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="kid-item-carousel">
+                    <div class="owl-kid-item owl-carousel">
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/15"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/dr1.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Super Sundae</h4>
+                                <span>$25.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/16"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/dr2.png" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Trà Lài Đác Thơm</h4>
+                                <span>$59.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/19"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/f3.png" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>
+                                    Tiramisu Mini
+                                </h4>
+                                <span>$32.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="../CustomerProducts/Details/18"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                                        <li><a href="../Cart/GetCartInfo"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="~/assets/images/f1.png" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4> Passion Panna Cotta</h4>
+                                <span>$32.00</span>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Kids Area Ends *****
+ ***** Explore Area Starts ***** -->
+<section class="section" id="explore">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left-content" style="font-family: 'Times New Roman', serif;">
+                    <h2>Khám Phá Sản Phẩm Của Chúng Tôi</h2>
+                    <span>Chúng tôi tự tin rằng bạn sẽ yêu thích các sản phẩm của chúng tôi. Đặt hàng ngay hôm nay và trải nghiệm sự khác biệt!</span>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i><p></p>
+                    </div>
+                    <p>
+                        Những người muốn sống một lối sống khỏe mạnh: Chúng tôi cung cấp đa dạng sản phẩm để giúp bạn ăn uống lành mạnh hơn, tập thể dục nhiều hơn và quản lý mức độ căng thẳng của bạn.
+                        Những người muốn trở nên hiệu quả hơn: Sản phẩm của chúng tôi có thể giúp bạn tổ chức suy nghĩ, tập trung và hoàn thành công việc hiệu quả hơn.
+                        Những người muốn thể hiện sự sáng tạo của mình: Sản phẩm của chúng tôi có thể giúp bạn thảo luận sự sáng tạo và tạo ra những điều tuyệt vời.
+                    </p>
+
+                    <div class="main-border-button">
+                        <a href="products.html">Khám Phá Thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="right-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="leather">
+                                <h4>Đặc Sản</h4>
+                                <span>Món Mới Hấp Dẫn</span>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="first-image">
+                                <img src="~/assets/images/t1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="second-image">
+                                <img src="~/assets/images/t2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="types">
+                                <h4>Các Loại Khác Nhau</h4>
+                                <span>Hơn 100 Món ăn đa dạng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ***** Explore Area Ends *****
+ ***** Social Area Starts ***** -->
+<section class="section" id="social">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Social Media</h2>
+                    <span>Chi tiết từng sản phẩm là điều làm nên sự khác biệt.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row images">
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Món Tráng Miệng</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/z7.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Món mới</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/z8.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Thương hiệu</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/z9.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Đặc Sản</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/z10.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Món Ăn Nhẹ</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/z11.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Thức Uống</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/z12.jpg" + alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Social Area Ends *****
+ ***** Subscribe Area Starts ***** -->
+<div class="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="section-heading">
+                    <h2>Bằng cách đăng ký nhận bản tin của chúng tôi, bạn có thể được giảm giá 30%</h2>
+                    <span>Chi tiết từng sản phẩm là điều làm nên sự khác biệt.</span>
+                </div>
+                <form id="subscribe" action="" method="get">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-5">
+
+                        </div>
+                        <div class="col-lg-2">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li>Store Location:<br><span>828 Sư Vạn Hạnh, Phường 13, Quận10, TP.HCM</span></li>
+                            <li>Phone:<br><span>0123456789</span></li>
+                            <li>Office Location:<br><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
+                            <li>Email:<br><span>nhom2@gmail.com</span></li>
+                            <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="~/Content/base.css">
+
+<link rel="stylesheet" href="~/Content/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="slider" style="margin-top:109px;height:350px;">
+
+    <div class="container" style="margin-left:150px;">
+
+        <div class="slider-content">
+
+            <div class="slider-content-left">
+
+                <div class="slider-content-left-top-container">
+
+                    <div class="slider-content-left-top">
+
+                        <a href=""><img src="~/Images/1.jpg" alt=""></a>
+
+                        <a href=""><img src="https://cf.shopee.vn/file/vn-50009109-ace31f8178309cd1c2b12863a6bf96c6_xxhdpi" alt=""></a>
+
+
+
+                    </div>
+
+                    <div class="slider-content-left-top-btn">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="slider-content-left-bottom">
+
+
+
+                    <li class="active"><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+                    <li><i class="fa-regular fa-circle"></i></li>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="slider-content-right" style="display:flex;">
+
+
+
+                <li><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhPq_u3oXkcMrsb6GCSQM7UjbzOMm21jzYlQ&usqp=CAU" style="margin-top: 2px; width: 157px; height: 232px; margin-right: 0px; object-fit: contain;" alt=""></a></li>
+                <li><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6qKVwrFLQUnVZZbdJneZ5SMneH4B02qImQ&usqp=CAU" style="margin-top: 2px; width: 157px; height: 232px; margin-right: 0px; object-fit: contain;" alt=""></a></li>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- .............. -->
+<!--<div class="application">
+
+    <div class="application-grid" style="margin-left:87px;">
+
+        <a href="">
+
+            <div class="application-content">
+
+                <div class="application-content-list">
+
+                    <div class="application-content-list-img">
+
+                        <img src="https://cf.shopee.vn/file/vn-50009109-c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi" alt="">
+
+                    </div>
+
+                </div>-->
+@*<div class="application-content-item">Miễn phí ship - Có Shoppe</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/vn-50009109-f6c34d719c3e4d33857371458e7a7059_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Voucher Sale đến 500.000Đ</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/vn-50009109-852300c407c5e79bf5dc1854aa0cfeef_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Hàng Hiệu Outlet Sale 50%</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/vn-50009109-8a387d78a7ad954ec489d3ef9abd60b4_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Mã Sale Giá</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Gì Cũng Rẻ - Deal Sốc 9.000Đ</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Nạp Thẻ,Dịc vụ & Data</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Hàng Quốc Tế</div>*@
+
+<!--</div>
+
+    </a>
+
+</div>
+
+<div class="application-grid">
+
+    <a href="">
+
+        <div class="application-content">
+
+            <div class="application-content-list">
+
+                <div class="application-content-list-img">
+
+                    <img src="https://cf.shopee.vn/file/vn-50009109-1975fb1af4ae3c22878d04f6f440b6f9_xhdpi" alt="">
+
+                </div>
+
+            </div>-->
+@*<div class="application-content-item">Bắt Trend - Giá Sốc</div>*@
+
+<!--</div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<section class="slider-product-one-four slider-product-one-four-five">
+
+    <div class="slider-container-four">
+
+        <div class="slider-container-four-content">
+
+            <div class="slider-container-four-content-title slider-container-four-content-title-five">
+
+                <span>Outstanding Products</span>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</section>-->
+<!-- ................................................ -->
+<!--<div class="grid__row-2">
+
+
+
+    <div class="grid__column-2-4 grid__column-2-6 ">
+
+        <a class="home-product-item" href="../CustomerProducts/Details/28">
+
+            <div class="home-product-item__img" style="background-image: url(https://localhost:44324/assets/images/men-01.jpg);"></div>
+
+            <h4 class="home-product-item__name">Class Spring</h4>
+
+            <div class="home-product-item__price">
+
+                <span class="home-product-item__price-old">299.00$</span>
+
+                <span class="home-product-item__price-current">120.000$</span>
+
+            </div>
+
+            <div class="home-product-item__action">
+
+                <span class="home-product-item__like home-product-item__like--liked">
+
+                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+                </span>
+
+
+
+                <span class="home-product-item__sold">2k+ đã bán</span>
+
+            </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">11%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/29">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX2ERPJyLLddnhp1AAM5y-etCCWke8ChNeXWKGcCZYC-H2d93C);"></div>
+
+        <h4 class="home-product-item__name">Ari Force</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">199.00$</span>
+
+            <span class="home-product-item__price-current">90.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">3k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/30">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmV04E-zSDMsQ_5i8lWgRAttZNulNse70UXbL1_J8UkkGEg0a3);"></div>
+
+        <h4 class="home-product-item__name">Love NaNa</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">289.00$</span>
+
+            <span class="home-product-item__price-current">150.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">1k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/9e02f1a9fb2d4efb9c90d3e35c7b0093); "></div>
+
+        <h4 class="home-product-item__name">Kupi</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">198.00$</span>
+
+            <span class="home-product-item__price-current">119.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+            <span class="home-product-item__sold">8k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnl0zht828ai1d);"></div>
+
+        <h4 class="home-product-item__name">Shirt</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">199.00$</span>
+
+            <span class="home-product-item__price-current">129.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+            <div class="home-product-item__rating">-->
+@*<i class="home-product-item__star--gold fa-solid fa-star"></i>
+
+    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+
+    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+
+    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+
+    <i class="fa-solid fa-star"></i>*@
+
+<!--</div>
+
+    <span class="home-product-item__sold">1k+ đã bán</span>
+
+</div>-->
+<!-- <div class="home-product-item__origin">
+
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">-->
+@*<i class="fa-solid fa-check"></i>*@
+
+@*<span>Favourite</span>*@
+
+<!--</div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkdqzpfcgqwfa);"></div>
+
+        <h4 class="home-product-item__name">Astral </h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">99.00$</span>
+
+            <span class="home-product-item__price-current">49.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">899 đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/31">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLjqwQfYPdYobZxM2NkK0gidbDAtK3Sg7KOCBgbn0Pt3Fr2GJX); "></div>
+
+        <h4 class="home-product-item__name">Blaze</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">129.00$</span>
+
+            <span class="home-product-item__price-current">75.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">299 đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">-->
+@*<i class="fa-solid fa-check"></i>
+
+    <span>Favourite</span>*@
+
+<!--</div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/33">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsmM_Xr0aPkbjCOSXgNXylrHlL-I4LKw752WrVVESFrM-LG5Nr);"></div>
+
+        <h4 class="home-product-item__name">Dress</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">129.00$</span>
+
+            <span class="home-product-item__price-current">45.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">1k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">-->
+@*<i class="fa-solid fa-check"></i>*@
+
+@*<span>Favourite</span>*@
+
+@*</div>
+
+    <div class="home-product-item__sale-off">
+
+        <span class="home-product-item__sale-off-percent">60%</span>
+
+        <span class="home-product-item__sale-off-lable">Sale</span>
+
+    </div>
+
+
+
+            </a>
+
+
+
+        </div>
+
+    <div class="grid__column-2-4 grid__column-2-6">
+
+        <a class="home-product-item" href="../CustomerProducts/Details/34">
+
+            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQMWg-8WjXu6c5aLP3MbEglu51DSnZX6ilwX23R7NdoSFRRd0e);"></div>
+
+            <h4 class="home-product-item__name">Spring Collection</h4>
+
+            <div class="home-product-item__price">
+
+                <span class="home-product-item__price-old">249.00$</span>
+
+                <span class="home-product-item__price-current">130.00$</span>
+
+            </div>
+
+            <div class="home-product-item__action">
+
+                <span class="home-product-item__like home-product-item__like--liked">
+
+                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+                </span>
+
+
+
+                <span class="home-product-item__sold">101 đã bán</span>
+
+            </div>-->*@
+
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+
+<div class="grid__column-2-4 grid__column-2-6">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/35">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIeNoF06oq72cumhVS5bUPTaeUryWTfCK2EqMJD-B3tWIYcRkJ);"></div>
+
+        <h4 class="home-product-item__name">School Collection</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">99.00%</span>
+
+            <span class="home-product-item__price-current">80.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">2k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__brand">Tori</span>
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">60%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/36">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAQDeHm97FP2zfKlSfluWmvozg2EIe-q69WG9kPdp2fI8mSo60);"></div>
+
+        <h4 class="home-product-item__name">Summer Cap</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">40.00$</span>
+
+            <span class="home-product-item__price-current">12.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">11k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="../CustomerProducts/Details/37">
+
+        <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMta7uNNliSOFuRRWZxnc0hK0LUv1JSzuwgw8fHG-8KW5vJDOV);"></div>
+
+        <h4 class="home-product-item__name">Classic Kid</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">89.00$</span>
+
+            <span class="home-product-item__price-current">30.00$</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">1k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/cn-11134207-7qukw-lkg6b13gbj5i9d);"></div>
+
+        <h4 class="home-product-item__name">Giày hội đồng quản trị nữ gradient sneakers sinh viên giày trắng bán chạy giày thể thao sinh viên thoáng khí giày thể thao hàn quốc giày</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">23.000.000đ</span>
+
+            <span class="home-product-item__price-current">19.99.000đ</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">999 đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lnckhnirgl8ob1);"></div>
+
+        <h4 class="home-product-item__name">Giày Thể Thao Nữ Màu Trắng In Hình Ngôi Sao Dễ Thương</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">2.000.000đ</span>
+
+            <span class="home-product-item__price-current">816.000đ</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">101 đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/th-11134201-7quky-lkbvaykteirf48);"></div>
+
+        <h4 class="home-product-item__name">Giày thể thao thông thường dễ phối thoáng khí đế dày đầu to xấu xí giày sneaker nữ</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">2.000.000đ</span>
+
+            <span class="home-product-item__price-current">816.000đ</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">2k+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-llee4iy4yivofb);"></div>
+
+        <h4 class="home-product-item__name">VENUS giày thể thao nữ Đế Bằng Hàn Quốc Êm Thích Hợp Đi Làm, Đi Học Chơi GiayBOM GB Prime FYD23904TZ 36Z230906</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">1.000.000đ</span>
+
+            <span class="home-product-item__price-current">300.000đ</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">2K+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkqou8m4snjv8c);"></div>
+
+        <h4 class="home-product-item__name">Giày nữ thể thao phối màu kẻ dạ Amuse trẻ trung năng động</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">2.000.000đ</span>
+
+            <span class="home-product-item__price-current">816.000đ</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">101 đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>Favourite</span>
+
+        </div>
+
+        <div class="home-product-item__sale-off">
+
+            <span class="home-product-item__sale-off-percent">10%</span>
+
+            <span class="home-product-item__sale-off-lable">Sale</span>
+
+        </div>
+
+
+
+    </a>
+
+
+
+</div>
+<div class="grid__column-2-4 grid__column-2-6 ">
+
+    <a class="home-product-item" href="#">
+
+        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lktt9ucgl9ds97);"></div>
+
+        <h4 class="home-product-item__name">Bản Chuẩn Full Phụ Kiện Giày _Nike Air Force 1 Xám Da Lộn lông Chuột Bản Cao Cấp</h4>
+
+        <div class="home-product-item__price">
+
+            <span class="home-product-item__price-old">2.000.000đ</span>
+
+            <span class="home-product-item__price-current">816.000đ</span>
+
+        </div>
+
+        <div class="home-product-item__action">
+
+            <span class="home-product-item__like home-product-item__like--liked">
+
+                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+
+                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+
+
+
+            </span>
+
+
+
+            <span class="home-product-item__sold">9K+ đã bán</span>
+
+        </div>-->
+<!-- <div class="home-product-item__origin">
+
+    <span class="home-product-item__origin-name">Korea</span>
+
+</div>  -->
+<!--<div class="home-product-item__favourite">
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>Favourite</span>
+
+            </div>
+
+            <div class="home-product-item__sale-off">
+
+                <span class="home-product-item__sale-off-percent">10%</span>
+
+                <span class="home-product-item__sale-off-lable">Sale</span>
+
+            </div>
+
+
+
+        </a>
+
+
+
+    </div>
+</div>
+<section class="slider-product-one-seven">
+
+    <div class="slider-container-four">
+
+        <div class="slider-container-four-content">
+
+            <div class="slider-container-four-content-title slider-container-four-content-title-five-2">
+
+                <span>Xem Thêm</span>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <script src="~/Content/java.js"></script>
+
+</section>-->

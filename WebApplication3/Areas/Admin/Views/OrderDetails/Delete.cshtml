@@ -1,0 +1,53 @@
+﻿@model WebApplication3.Models.OrderDetail
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_MainLayOutADMIN.cshtml";
+}
+
+
+
+
+<div style="margin-left: 300px; width: 40%; background-color: floralwhite; font-family: 'Times New Roman', Times, serif; color: #333;">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UnitPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderPro.AddressDelivery)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrderPro.AddressDelivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.NamePro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.NamePro)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+
