@@ -156,6 +156,7 @@
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\UserVouCherController.cs" />
     <Compile Include="Data\CategorySingleton.cs" />
+    <Compile Include="Data\IIterator.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

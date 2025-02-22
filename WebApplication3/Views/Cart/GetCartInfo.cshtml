@@ -19,7 +19,7 @@
                     <th scope="col">ĐƠN GIÁ</th>
                     <th scope="col">THÀNH TIỀN</th>
                     <th scope="col">CHI TIẾT</th>
-                  
+
                     <th scope="col">XÓA</th>
                     <th scope="col">BUY</th>
                 </tr>
@@ -41,8 +41,10 @@
                                 <button type="submit" class="btn btn-primary">Cập nhật</button>
                             }
                         </td>
-                        <td>@product.Price.ToString("C")</td>
-                        <td>@product.FinalPrice().ToString("C")</td>
+                        <td>@product.Price.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</td>
+                        <td>@product.FinalPrice().ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</td>
+
+
                         <td>
                             @Html.ActionLink("Chi tiết", "Details", "CustomerProducts", new { id = product.ProductID }, new { @class = "btn btn-success" })
                         </td>
@@ -58,18 +60,18 @@
                         </td>
                     </tr>
                 }
-                <tr style="font-weight:bold; text-align:right; color:red;">
-                    <td colspan="5">Tổng số lượng: @ViewBag.TotalNumber</td>
-                    <td colspan="1">Tổng tiền: @ViewBag.TotalPrice.ToString("C")</td>
-                </tr>
-                <tr>
-                    <td colspan="10">
-                        <hr />
-                        @using (Html.BeginForm("ApplyVoucher", "Cart", FormMethod.Post))
-                        {
-                            @Html.Hidden("productId", Model.FirstOrDefault()?.ProductID ?? 0) <!-- Placeholder for productId -->
-                            @Html.TextBox("voucherId", null, new { @class = "form-control", placeholder = "Nhập mã voucher" })
-                            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Áp dụng voucher</button>
-                        }
+            <tr style="font-weight:bold; text-align:right; color:red;">
+                <td colspan="5">Tổng số lượng: @ViewBag.TotalNumber</td>
+                <td colspan="1">Tổng tiền: @ViewBag.TotalPrice.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</td>
+
+            </tr>
+            </tbody>
+        </table>
+        @using (Html.BeginForm("ApplyVoucher", "Cart", FormMethod.Post))
+        {
+            @Html.Hidden("productId", Model.FirstOrDefault()?.ProductID ?? 0) <!-- Placeholder for productId -->
+            @Html.TextBox("voucherId", null, new { @class = "form-control", placeholder = "Nhập mã voucher" })
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Áp dụng voucher</button>
+        }
     </div>
 </div>

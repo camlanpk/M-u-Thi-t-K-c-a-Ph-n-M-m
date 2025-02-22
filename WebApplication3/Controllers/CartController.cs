@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication3.Data;
 using WebApplication3.Models;
 
 namespace WebApplication3.Controllers
@@ -150,14 +151,27 @@ namespace WebApplication3.Controllers
                 database.OrderProes.Add(DonHang);
                 database.SaveChanges();
                 // Lần lượt thêm từng chi tiết cho đơn hàng
-                foreach (var product in myCart)
+                //foreach (var product in myCart)
+                //{
+                //    OrderDetail chitiet = new OrderDetail();
+                //    chitiet.IDOrder = DonHang.ID;
+                //    chitiet.IDProduct = product.ProductID;
+                //    chitiet.Quantity = product.Number;
+                //    chitiet.UnitPrice = (double)product.Price;
+                //    database.OrderDetails.Add(chitiet);
+                //}
+
+                IIterator iterator = new CartIIterator(myCart);
+                var item = iterator.First();
+                while (iterator.IsDone)
                 {
                     OrderDetail chitiet = new OrderDetail();
                     chitiet.IDOrder = DonHang.ID;
-                    chitiet.IDProduct = product.ProductID;
-                    chitiet.Quantity = product.Number;
-                    chitiet.UnitPrice = (double)product.Price;
+                    chitiet.IDProduct = item.ProductID;
+                    chitiet.Quantity = item.Number;
+                    chitiet.UnitPrice = (double)item.Price;
                     database.OrderDetails.Add(chitiet);
+                    item = iterator.Next();
                 }
                 database.SaveChanges();
                 // Xóa giỏ hàng sau khi đặt hàng thành công
