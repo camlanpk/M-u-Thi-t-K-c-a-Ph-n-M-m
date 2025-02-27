@@ -20,15 +20,16 @@
                     <p><strong>MÃ SẢN PHẨM: </strong>@product.ProductID</p>
                     <p><strong>TÊN SẢN PHẨM: </strong>@product.NamePro</p>
                     <p><strong>SỐ LƯỢNG: </strong>@product.Number</p>
-                    <p><strong>ĐƠN GIÁ: </strong>@String.Format("{0:0,0}", product.Price)$</p>
-                    <p><strong>THÀNH TIỀN: </strong>@String.Format("{0:0,0}", product.FinalPrice())$</p>
+                    <p><strong>ĐƠN GIÁ: </strong>@String.Format("{0:0,0₫}", product.Price)</p>
+                    <p><strong>THÀNH TIỀN: </strong>@String.Format("{0:0,0₫}", product.FinalPrice())</p>
+
                 </div>
             </div>
         }
 
         <div style="text-align: right; margin-top: 20px;">
             <p style="font-weight: bold; color: #ff0000;">Tổng số lượng: @ViewBag.TotalNumber</p>
-            <p style="font-weight: bold; color: #ff0000;">Tổng tiền: @ViewBag.TotalPrice$</p>
+            <p style="font-weight: bold; color: #ff0000;">Tổng tiền: @ViewBag.TotalPrice.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</p>
         </div>
     </div>
 

@@ -167,6 +167,39 @@ namespace WebApplication3.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
+
+        // GET: Products/Duplicate/5
+        public ActionResult Duplicate(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Product product = db.Products.Find(id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
+        }
+
+        // POST: Products/Duplicate/5
+        [HttpPost, ActionName("Duplicate")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DuplicateConfirmed(int id)
+        {
+            Product existingProduct = db.Products.Find(id);
+            if (existingProduct == null)
+            {
+                return HttpNotFound();
+            }
+            var cloneProduct = (Product)existingProduct.Clone();
+
+            db.Products.Add(cloneProduct);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

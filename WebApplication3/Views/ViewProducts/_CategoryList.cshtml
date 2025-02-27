@@ -1,0 +1,24 @@
+﻿@model List<WebApplication3.Models.Category>
+
+<h3>Danh mục sản phẩm</h3>
+<ul class="list-group">
+    @foreach (var category in Model)
+    {
+        <li class="list-group-item">
+            <a href="@Url.Action("Index", new { slugCategory = category.IDCate })">@category.NameCate</a>
+        </li>
+    }
+</ul>
+
+<h4>Danh mục sản phẩm</h4>
+<ul class="list-group">
+    @foreach (var category in Model)
+    {
+        <li class="list-group-item @(ViewBag.slugCategory == category.IDCate ? "active" : "")">
+            <a href="@Url.Action("Index", new { slugCategory = category.IDCate })">
+                @category.NameCate
+            </a>
+        </li>
+    }
+</ul>
+

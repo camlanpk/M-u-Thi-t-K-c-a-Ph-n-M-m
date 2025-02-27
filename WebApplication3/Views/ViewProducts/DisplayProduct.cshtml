@@ -1,0 +1,32 @@
+﻿@model WebApplication3.Models.Product
+@{
+    ViewBag.Title = Model.NamePro;
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+
+<h2>@Model.NamePro</h2>
+<img src="@Model.ImagePro" alt="@Model.NamePro" class="img-thumbnail" width="300" />
+<p><strong>Giá:</strong> @(Model.Price.HasValue ? Model.Price.Value.ToString("C") : "Liên hệ")</p>
+<p><strong>Mô tả:</strong> @Model.DescriptionPro</p>
+
+<a href="@Url.Action("Index")" class="btn btn-primary">Quay lại</a>
+
+
+<div class="container">
+    <h2>@Model.NamePro</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.ImagePro" class="img-fluid" alt="@Model.NamePro">
+        </div>
+        <div class="col-md-6">
+            <h3>@Model.Price VNĐ</h3>
+            <p>@Model.DescriptionPro</p>
+            <a href="javascript:history.back()" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </div>
+</div>
+
+
+

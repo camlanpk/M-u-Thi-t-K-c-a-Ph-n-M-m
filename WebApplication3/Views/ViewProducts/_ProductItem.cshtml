@@ -1,0 +1,27 @@
+﻿@model WebApplication3.Models.Product
+
+<div class="col-md-4">
+    <div class="card">
+        <img src="@Model.ImagePro" class="card-img-top" alt="@Model.NamePro" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.NamePro</h5>
+            <p class="card-text"><strong>Giá:</strong> @(Model.Price.HasValue ? Model.Price.Value.ToString("C") : "Liên hệ")</p>
+            <a href="@Url.Action("DisplayProduct", new { slug = Model.ProductID })" class="btn btn-info">Xem chi tiết</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="card mb-3">
+        <img src="@Model.ImagePro" class="card-img-top img-fluid" alt="@Model.NamePro">
+        <div class="card-body">
+            <h5 class="card-title">@Model.NamePro</h5>
+            <p class="card-text">@Model.DescriptionPro</p>
+            <p class="card-text"><strong>Giá:</strong> @Model.Price VNĐ</p>
+            <a href="@Url.Action("DisplayProduct", new { slug = Model.ProductID })" class="btn btn-primary">
+                Xem chi tiết
+            </a>
+        </div>
+    </div>
+</div>

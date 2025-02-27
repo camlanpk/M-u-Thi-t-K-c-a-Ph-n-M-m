@@ -23,7 +23,7 @@
                 {
                     <tr>
                         <td>@order.ID</td>
-                        <td>@order.DateOrder</td>
+                        <td>@(order.DateOrder?.ToString("dd/MM/yyyy") ?? "Chưa có ngày")</td>
                         <td>@order.AddressDelivery</td>
                         <td>
                             @Html.ActionLink("Xem Chi Tiết", "ViewOrderDetails", "Cart", new { orderId = order.ID }, new { @class = "btn btn-success" })

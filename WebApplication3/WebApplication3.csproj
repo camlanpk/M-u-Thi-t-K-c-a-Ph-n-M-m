@@ -155,6 +155,11 @@
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\UserVouCherController.cs" />
+    <Compile Include="Controllers\ViewProductsController.cs" />
+    <Compile Include="Controllers\ViewProductsControllerFacade\ViewProductsFacade.cs" />
+    <Compile Include="Controllers\ViewProductsControllerFacade\ViewProductsSubControllerCache.cs" />
+    <Compile Include="Controllers\ViewProductsControllerFacade\ViewProductsSubControllerContext.cs" />
+    <Compile Include="Controllers\ViewProductsControllerFacade\ViewProductsSubControllerLogger.cs" />
     <Compile Include="Data\CategorySingleton.cs" />
     <Compile Include="Data\IIterator.cs" />
     <Compile Include="Global.asax.cs">
@@ -848,6 +853,7 @@
     <Content Include="Models\Model2.edmx.diagram">
       <DependentUpon>Model2.edmx</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\Products\Duplicate.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -897,6 +903,10 @@
     <Content Include="Views\UserVouCher\Details.cshtml" />
     <Content Include="Views\Users\ForgotPassword.cshtml" />
     <Content Include="Views\Shared\_ProductList.cshtml" />
+    <Content Include="Views\ViewProducts\Index.cshtml" />
+    <Content Include="Views\ViewProducts\DisplayProduct.cshtml" />
+    <Content Include="Views\ViewProducts\_CategoryList.cshtml" />
+    <Content Include="Views\ViewProducts\_ProductItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -904,6 +914,7 @@
     <Folder Include="Areas\Admin\Images\" />
     <Folder Include="Areas\Admin\Views\AreaAreaRegistration\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\ViewPost\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

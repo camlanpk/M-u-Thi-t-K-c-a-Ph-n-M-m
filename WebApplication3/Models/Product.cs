@@ -12,7 +12,11 @@ namespace WebApplication3.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public interface ProductPrototype
+    {
+        ProductPrototype Clone();
+    }
+    public partial class Product : ProductPrototype
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
@@ -30,5 +34,16 @@ namespace WebApplication3.Models
         public virtual Category Category1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public ProductPrototype Clone()
+        {
+            Product newProduct = new Product();
+            newProduct.NamePro = NamePro + " - Copy";
+            newProduct.DescriptionPro = DescriptionPro;
+            newProduct.Category = Category;
+            newProduct.Price = Price;
+            newProduct.ImagePro = ImagePro;
+
+            return newProduct;
+        }
     }
 }
